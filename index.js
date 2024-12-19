@@ -1,5 +1,3 @@
-// Updated HTML
-// Make sure the HTML reflects the additional inputs for 'Branch' and 'State'.
 
 var express = require("express");
 var bodyParser = require("body-parser");
@@ -24,8 +22,8 @@ app.post("/sign_up", (req, res) => {
     var email = req.body.email;
     var phno = req.body.phno;
     var gender = req.body.gender;
-    var branch = req.body.branch; // Added Branch
-    var state = req.body.state;   // Added State
+    var branch = req.body.branch; 
+    var state = req.body.state;   
     var password = req.body.password;
 
     var data = {
@@ -34,8 +32,8 @@ app.post("/sign_up", (req, res) => {
         "email": email,
         "phno": phno,
         "gender": gender,
-        "branch": branch, // Include Branch in the database
-        "state": state,   // Include State in the database
+        "branch": branch, 
+        "state": state,  
         "password": password
     };
 
